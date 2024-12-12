@@ -1,0 +1,276 @@
+/* General Styling */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #002b5c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #ff9800;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('..//images/background.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 150px 20px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.8rem;
+    margin: 10px 0;
+}
+
+.btn-primary {
+    background-color: #ff9800;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #e67e22;
+}
+
+/* Section Styling */
+.section {
+    padding: 70px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2.8rem;
+    margin-bottom: 30px;
+}
+
+.section p {
+    font-size: 1.4rem;
+    margin-bottom: 50px;
+}
+
+/* Room Listings */
+.room-listings {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.room {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    width: 22%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.room h3 {
+    color: #002b5c;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.room p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Menu Listings */
+.menu-listings {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.menu-item {
+    background-color: #e9f2ff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 22%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.menu-item h3 {
+    color: #002b5c;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Bar Listings */
+.bar-listings {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.bar-item {
+    background-color: #fff9e6;
+    padding: 20px;
+    border-radius: 8px;
+    width: 22%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.bar-item h3 {
+    color: #002b5c;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.bar-item p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Gallery */
+.gallery-images {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery-images img {
+    width: 22%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Events Listings */
+.event-listings {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.event-item {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+    width: 22%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.event-item h3 {
+    color: #002b5c;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.event-item p {
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Contact Form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+form button {
+    background-color: #ff9800;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #e67e22;
+}
+
+/* Footer */
+footer {
+    background-color: #002b5c;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .room, .menu-item, .bar-item, .event-item, .gallery-images img {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .room, .menu-item, .bar-item, .event-item, .gallery-images img {
+        width: 100%;
+    }
+}
